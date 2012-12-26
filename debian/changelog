@@ -1,0 +1,5 @@
+t50 (5.4.1-rc1-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Devon Kearns <dookie@kali.org>  Wed, 26 Dec 2012 11:18:29 -0700
