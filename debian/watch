@@ -1,0 +1,6 @@
+version=3
+
+# http://sf.net/t50/t50-(.*)\.tgz
+
+# Uncomment to find new files on GooglePages
+# http://example.googlepages.com/foo.html t50-(.*)\.tar\.gz

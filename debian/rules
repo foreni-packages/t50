@@ -11,3 +11,12 @@
 
 %:
 	dh $@ 
+override_dh_auto_build:
+	gzip t50.1
+	cd src
+	make
+	
+override_dh_auto_install:
+	dh_installdirs
+	install t50.1.gz $(CURDIR)/debian/t50/usr/share/man/man1/
+	install src/t50 $(CURDIR)/debian/t50/usr/bin/

@@ -1,15 +1,26 @@
 Source: t50
-Section: unknown
+Section: utils
 Priority: extra
 Maintainer: Devon Kearns <dookie@kali.org>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/t50.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/t50.git;a=summary
+Homepage: http://t50.sourceforge.net/
+Vcs-Git: ssh://git@git.kali.org/packages/t50.git
+Vcs-Browser: http://git.kali.org/gitweb/?p=packages/t50.git;a=summary
 
 Package: t50
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Multi-protocol packet injector tool
+ Multi-protocol packet injector tool for *nix systems, 
+ actually supporting 15 protocols.
+ .
+ Features:
+ .
+ - Flooding
+ - CIDR support
+ - TCP, UDP, ICMP, IGMPv2, IGMPv3, EGP, DCCP, RSVP, RIPv1, 
+ RIPv2, GRE, ESP, AH, EIGRP and OSPF support.
+ - TCP Options.
+ - High performance.
+ - Can hit about 1.000.000 packets per second.
