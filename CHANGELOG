@@ -1,0 +1,38 @@
+T50 - Experimental Mixed Packet Injector
+
+Legend:
++ Added feature
+* Improved/changed feature
+- Bug fixed
+! Known issue / missing feature
+
+T50 5.4.1 - November 26, 2011 - thanks to Frederico Pissara!
+ - Fixed bug in option parsing.
+ - Fixed licensing miss in some files.
+ * Improved code, reduced memory consumption.
+ * Improved Makefile, reduced compilation time, use of SS3 instructions.
+ - Manpage moved to section 8.
+ + Strip set by default.
+
+T50 5.4.0 - September 4, 2011
+ + New version scheme <MajorVersion.MinorVersion.RevisionNumber>.
+ + Added manpage.
+ * UPX and strip removed.
+ * License limitations removed.
+ * Removed libmath dependency.
+ * New smaller Makefile reducing compile time. Many flags removed.
+ ! We don't have support for IPv6 yet.
+ ! T50 may not compile in other systems nor GNU/Linux distros.
+
+T50 5.3 - April 9, 2011
+ + New License: it is, finally, licensed under GPL v2.0. Please, refer
+ to LICENSE document for further information.
+ + CIDR Support: Classless Inter-Domain Routing  support  for destination
+   IP address,  using  a  really  tiny  C  algorithm.  This would allow
+   the new version to simulate DDoS in a laboratory environment.
+ + New protocols support: IGMP, EGP, RIP, DCCP, RSVP, IPSec, GRE, EIGRP
+ and OSPF.
+ + TCP Options support.
+ 
+ T50 3.4 - November 10, 2010
+  First public release.

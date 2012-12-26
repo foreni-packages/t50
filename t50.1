@@ -1,0 +1,55 @@
+.TH T50 1
+.SH NAME
+t50 - perform network stress test against hosts
+
+.SH SYNOPSIS
+.B t50
+[OPTION]...
+.IR host
+[/CIDR]
+
+.SH DESCRIPTION
+Experimental mixed packet injector tool. T50 must to be executed as root.
+
+.SH OPTIONS
+.TP
+.BI \-\-threshold " NUM"
+Number of packets to send (default 1000).
+
+.TP
+.BR \-\-flood
+Superseds the threshold.
+
+.TP
+.BR \-B ", " \-\-bogus-csum
+Bogus checksum.
+
+.TP
+.BR \-\-turbo
+Extend performance (create child process).
+
+.TP
+.BI \-s, " "\-\-saddr " ADDR"
+IP source address (default RANDOM).
+
+.TP
+.BR \-\-help
+Display full help.
+
+.SH EXAMPLES
+Send 500 packets to a single target:
+.IP
+# t50 --threshold 500 192.168.0.100
+
+.PP
+Flood test:
+.IP
+$ t50 --flood 192.168.0.100
+
+.SH AUTHORS
+Nelson Brito, Fernando Mercês
+.SH REPORTING BUGS
+Report t50 bugs at http://sourceforge.net/p/t50/tickets/
+.SH COPYRIGHT
+Copyright © 2010-2011 Coding 40°. Licensed GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.
