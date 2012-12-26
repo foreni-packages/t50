@@ -11,10 +11,12 @@
 
 %:
 	dh $@ 
+
+build:
+	cd src/ && make
+
 override_dh_auto_build:
 	gzip t50.1
-	cd src
-	make
 	
 override_dh_auto_install:
 	dh_installdirs
