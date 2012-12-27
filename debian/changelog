@@ -1,3 +1,9 @@
+t50 (5.4.1-rc1-1kali1) kali; urgency=low
+
+  * Fixed build for 32 bit
+
+ -- Devon Kearns <dookie@kali.org>  Thu, 27 Dec 2012 05:46:12 -0700
+
 t50 (5.4.1-rc1-1kali0) kali; urgency=low
 
   * Initial release 
